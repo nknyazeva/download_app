@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Download</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="upload_container" >
+    <label for="fileuplouder" class="upload_button">
+        <i class="fa fa-cloud-upload" aria-hidden="true">
+        </i>
+        <span class="upload_text">
+            Загрузить
+        </span>
+    </label>
+
+    <input type="file" id="fileuplouder">
+</div>
+</body>
+
+<script>
+
+    var fileuplouder = document.getElementById('fileuplouder')
+
+    fileuplouder.addEventListener('change', function (e) {
+
+        var name = fileuplouder.files[0].name;
+
+        fetch('http://localhost:8080/?name=' + name, {method: "POST", body: fileuplouder.files[0]}).then(function (response) {
+
+            return response.text()
+
+        }).then(function (data) {
+
+            alert(data)
+
+        })
+
+    })
+
+
+</script>
+
+</html>

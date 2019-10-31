@@ -1,0 +1,100 @@
+body {
+    background: #F8F9F9;
+}
+
+.upload_container {
+    width: 500px;
+    height: 400px;
+    padding: 10px;
+    border: 1px solid #E5E7E9;
+    background: #FDFEFE;
+    margin: auto;
+    display: block;
+    margin-top: 80px;
+}
+
+
+.upload_button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    margin: auto;
+    margin-top: 220px;
+    padding: 0;
+    max-width: 350px;
+    height: 61px;
+    width: 230px;
+    font-size: 22px;
+    line-height: 61px;
+    border-radius: 3px;
+    border: 1px solid #a2bd37;
+    background-color: #a2bd37;
+    transition: all 200ms ease-out;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+.download_button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    margin: auto;
+    margin-top: 320px;
+    padding: 0;
+    max-width: 350px;
+    height: 61px;
+    width: 230px;
+    font-size: 22px;
+    line-height: 61px;
+    border-radius: 3px;
+    border: 1px solid #a2bd37;
+    background-color: #a2bd37;
+    transition: all 200ms ease-out;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+.upload_button:hover {
+    background: #7b9d01;
+}
+
+.download_button:active {
+    outline: none;
+}
+
+.download_button:hover {
+    background: #7b9d01;
+}
+
+.upload_button:active {
+    outline: none;
+}
+
+.upload_text {
+    color: white;
+    text-decoration: none;
+}
+
+.fa-cloud-download {
+    margin: auto;
+    color: white;
+}
+
+.fa-cloud-upload {
+    margin: auto;
+    color: white;
+}
+
+#fileuplouder {
+    display: none;
+}

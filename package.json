@@ -1,0 +1,21 @@
+{
+  "name": "nw-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "html/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "window": {
+    "toolbar": false,
+    "width": 800,
+    "height": 600
+  },
+  "license": "ISC",
+  "dependencies": {
+    "pretty-bytes": "^1.0.2"
+  },
+  "devDependencies": {
+  }
+}
